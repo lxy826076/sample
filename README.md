@@ -9,7 +9,7 @@
 ## 枚举填充
 使用说明:
 
-1. 启动类加入注解，修改枚举扫描路径@EnableEnumFill(basePackages = "com.zeekrlife.ota.sample")
+1. 启动类加入注解，修改枚举扫描路径@EnableEnumFill(basePackages = "com.xxx")
 2. 对于需要自动填充的枚举实现 GlobalEnum 接口
 3. 返回前端的VO对象属性上加上注解@EnumValue(enumType = TestStatusEnum.class)
 
