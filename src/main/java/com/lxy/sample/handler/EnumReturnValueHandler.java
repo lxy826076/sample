@@ -70,6 +70,9 @@ public class EnumReturnValueHandler implements HandlerMethodReturnValueHandler {
      */
     private void dealEnum(Object returnValue) {
         try {
+            if (null == returnValue) {
+                return;
+            }
             Class<?> beanClazz = returnValue.getClass();
             Method getCodeMethod = beanClazz.getMethod("getCode");
             Integer code = (Integer) getCodeMethod.invoke(returnValue);
